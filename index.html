@@ -3,21 +3,177 @@
   <head>
     <meta charset="utf-8">
     <title>Dirty Jobs Online</title>
+
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <link rel="stylesheet" type="text/text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
+    <div class="container">
     <h1>hi!</h1>
 
 
     <form id="quiz">
-      <input type="" id="smells">
 
+      <div id="quiz1">
+        <h5>I am comfortable working around/in:</h5>
+        <p>
+          <input type="checkbox" id="animalblood" name="fluid-comfort" value="animalblood"/>
+          <label for="animalblood">Blood (animal)</label>
+        </p>
+        <p>
+          <input type="checkbox" id="humanblood" name="fluid-comfort" value="humanblood"/>
+          <label for="humanblood">Blood (human)</label>
+        </p>
+        <p>
+          <input type="checkbox" id="animalexcrement" name="fluid-comfort" value="animalexcrement" />
+          <label for="animalexcrement">Excrement (animal)</label>
+        </p>
+        <p>
+          <input type="checkbox" id="humanexcrement" name="fluid-comfort" value="humanexcrement"/>
+          <label for="humanexcrement">Excrement (human)</label>
+        </p>
+        <br/>
+        <h5>I am comfortable working with:</h5>
+        <p>
+         <input type="checkbox" id="animalslive" />
+         <label for="animalslive">Animals (live)</label>
+        </p>
+        <p>
+         <input type="checkbox" id="animalsdead" />
+         <label for="animalsdead">Animals (dead)</label>
+        </p>
+        <p>
+         <input type="checkbox" id="humansdead" />
+         <label for="humansdead">Humans (dead)</label>
+        </p>
+        <p>
+         <input type="checkbox" id="insectslive" />
+         <label for="insectslive">Insects (live) </label>
+        </p>
+        <p>
+         <input type="checkbox" id="insectsdead" />
+         <label for="insectsdead">Insects (dead)</label>
+        </p>
+        <br/>
+        <div class="switch">
+          <h5>I am comfortable facilitating animal reproduction</h5>
+          <label>
+            No
+            <input type="checkbox" id="animalreproduction">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br/>
+        <div class="switch">
+          <h5>I am comfortable exterminating/slaughtering animals</h5>
+          <label>
+            No
+            <input type="checkbox" id="exterminationslaughter">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br/>
+        <br/>
+        <button class="btn waves-effect waves-light" id="quizNav1" name="action">Next<i class="material-icons right">navigate_next</i>
+        </button>
+      </div>
 
     </form>
 
 
+      <div id="quiz2">
+        <div class="switch">
+          <h5>I am comfortable working in confined spaces</h5>
+          <label>
+            No
+            <input type="checkbox" id="confinedspaces">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br/>
+        <div class="switch">
+          <h5>I am comfortable working with hazardous materials</h5>
+          <label>
+            No
+            <input type="checkbox" id="hazardousmaterials">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br/>
+        <div class="switch">
+          <h5>I am comfortable working around strong odors</h5>
+          <label>
+            No
+            <input type="checkbox" id="strongsmells">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br/>
+        <br/>
+        <button class="btn waves-effect waves-light" id="quizNav2" name="action">Next<i class="material-icons right">navigate_next</i>
+        </button>
+      </div>
+
+      <div id="quiz3">
+        <div class="switch">
+          <h5>I am willing to wake up very early or in the middle of the night.</h5>
+          <label>
+            No
+            <input type="checkbox" id="wake-early">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br>
+
+        <div class="switch">
+          <h5>I would be willing to consider relocating for the right position.</h5>
+          <label>
+            No
+            <input type="checkbox" id="relocate">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br>
+
+        <div class="switch">
+          <h5>I would be able to travel for my new job.</h5>
+          <label>
+            No
+            <input type="checkbox" id="travel">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+        <br>
+
+        <div class="switch">
+          <h5>I could commit a few months to a few years to further education/training.</h5>
+          <label>
+            No
+            <input type="checkbox" id="education">
+            <span class="lever"></span>
+            Yes
+          </label>
+        </div>
+          <br>
+          <br>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Find me a dirty job!<i class="material-icons right">send</i>
+          </button>
+      </div>
+    </div>
+      <div id="output">
+      </div>
+  </div>
 
 
 
@@ -41,22 +197,19 @@ question: toleration of specific fluids/etc
           excrement
           blood
           horse/pig "fluid"
-
-question: can you work in confined (very small) spaces
-
-question: willing to work around toxic chemicals
-
 question: comfortable being around insects/animals?
           dead people?
           killing insects?
           killing animals?
 
-question: willingness to wake up very early/on demand
-
+question: can you work in confined (very small) spaces
+question: willing to work around toxic chemicals
 question: tolerance of smells
 
-question: willingness to relocate/travel
 
+
+question: willingness to wake up very early/on demand
+question: willingness to relocate/travel
 question: timeline of training/education requirements
 
 
