@@ -1,3 +1,10 @@
+.dirty, .animalsdead, .humanalive {
+  display:none;
+}
+#dirty {
+  display:none;
+}
+
 #quiz2 {
   display: none;
 }
@@ -6,7 +13,7 @@
 }
 #quiz4 {
   display: none;
-  
+
 }
 #output {
   display: none;

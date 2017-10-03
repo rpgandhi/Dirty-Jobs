@@ -26,7 +26,17 @@ var crimeSceneCleaner = ["humansdead", "insectslive", "hazardousmaterials", "hum
 var jobsject = { garbageCollector, homeInspector, septicTankServicer, fishCanner, fishHatchery, podiatrist, medicalExaminer, butcher, taxidermist, clothDiaper, exterminator, sewerInspector, pigFarmer, chewingGumRemover, pigeonPoopCleaner, oilSpillCleaner, horseBreeder, slaughterHouseWorker, poopCoffee, mortician, crimeSceneCleaner }
 
 
+var traits = ["gettingdirty", "insectslive","insectsdead","animalexcrement", "humanexcrement", "strongsmells","education", "hazardousmaterials", "wakeearly", "confinedspaces"];
 
+var dirty = ["Garbage Collecter", "Sewer Inspecter", "Septic Tank Servicer"];
+
+// function includes(item) {
+//   for (var i = 0; i < answersArr.length; i++) {
+//     if (traits.includes(answersArr[i]) {
+//       outputArr.push(answersArr[i]);
+//     }
+//   }
+// }
 
 // function includesCheck(item) {
 //   jobsject.forEach(function(item) {
@@ -42,6 +52,7 @@ $(document).ready(function() {
   $("#quiz").submit(function(event) {
     event.preventDefault();
   });
+  var outputArr = [];
   var answersArr = [];
   $("#quizNav1").click(function(event) {
     $("input:checkbox[name=quizboxes]:checked").each(function(){
@@ -65,6 +76,21 @@ $(document).ready(function() {
       answersArr.push(answer);
     });
     $("#quiz3").hide();
-    console.log(compareAnswers(answersArr));
+    // console.log(compareAnswers(answersArr));
+    alert(outputArr);
+
+    for (var i = 0; i < answersArr.length; i++) {
+      if (traits.includes(answersArr[i])) {
+        outputArr.push(answersArr[i]);
+        // alert(outputArr);
+        $(".dirty").show();
+        $(".animalsdead").show();
+
+
+      }
+    }
+
   });
+
+
 });
