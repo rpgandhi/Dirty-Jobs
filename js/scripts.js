@@ -25,6 +25,16 @@ var crimeSceneCleaner = ["humansdead", "insectslive", "hazardousmaterials", "hum
 
 var jobsject = { garbageCollector, homeInspector, septicTankServicer, fishCanner, fishHatchery, podiatrist, medicalExaminer, butcher, taxidermist, clothDiaper, exterminator, sewerInspector, pigFarmer, chewingGumRemover, pigeonPoopCleaner, oilSpillCleaner, horseBreeder, slaughterHouseWorker, poopCoffee, mortician, crimeSceneCleaner }
 
+
+
+
+// function includesCheck(item) {
+//   jobsject.forEach(function(item) {
+//
+// });
+// };
+
+
 // "animalblood", "humanblood", "animalexcrement", "humanexcrement", "animalslive", "animalsdead", "humansdead", "insectslive", "insectsdead", "animalrepro", "exterminationslaughter", "confinedspaces", "hazardousmaterials", "strongsmells", "gettingdirty", "wakeearly", "relocate", "travel", "education"
 
 //front end logic
@@ -37,7 +47,6 @@ $(document).ready(function() {
     $("input:checkbox[name=quizboxes]:checked").each(function(){
       var answer = $(this).val();
       answersArr.push(answer);
-      console.log(answersArr);
     });
     $("#quiz1").hide();
     $("#quiz2").fadeIn("slow");
@@ -46,7 +55,6 @@ $(document).ready(function() {
     $("input:checkbox[name=quizboxes2]:checked").each(function(){
       var answer = $(this).val();
       answersArr.push(answer);
-      console.log(answersArr);
     });
     $("#quiz2").hide();
     $("#quiz3").fadeIn("slow");
@@ -55,10 +63,8 @@ $(document).ready(function() {
     $("input:checkbox[name=quizboxes3]:checked").each(function(){
       var answer = $(this).val();
       answersArr.push(answer);
-      console.log(answersArr);
     });
     $("#quiz3").hide();
+    console.log(compareAnswers(answersArr));
   });
-
-  // console.log(answersArr);
 });
