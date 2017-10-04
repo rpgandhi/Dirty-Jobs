@@ -1,10 +1,25 @@
-.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
+/*.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
   display:none;
-}
+}*/
+
 #dirty {
   display:none;
 }
 
 #skillsquiz, #quiz2, #quiz3, #quiz4, #output, #dirty {
   display: none
+}
+
+p.title {
+  font-weight: bold;
+  padding-top: 1.5em;
+}
+
+.collapsible-header {
+  /*font-weight: bold;*/
+  font-size: 1.5rem;
+}
+
+#jobdescriptions {
+  width: 70%;
 }
