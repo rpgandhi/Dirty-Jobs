@@ -77,18 +77,28 @@ $(document).ready(function() {
     });
     $("#quiz3").hide();
     // console.log(compareAnswers(answersArr));
-    alert(outputArr);
+    // alert(outputArr);
 
+    // for (var i = 0; i < answersArr.length; i++) {
+    //   if (traits.includes(answersArr[i])) {
+    //     outputArr.push(answersArr[i]);
+    //     // alert(outputArr);
+    //     $(".dirty").show();
+    //     $(".animalsdead").show();
+    //
+    //
+    //   }
+    // }
     for (var i = 0; i < answersArr.length; i++) {
-      if (traits.includes(answersArr[i])) {
-        outputArr.push(answersArr[i]);
-        // alert(outputArr);
-        $(".dirty").show();
-        $(".animalsdead").show();
+        var trait = "." + answersArr[i];
+        $(trait).show();
 
-
-      }
     }
+
+
+    // if (outputArray.includes("animalexcrement"){
+    //   $(".animalexcrement").show();
+    // })
 
   });
 
