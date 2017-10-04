@@ -2371,7 +2371,7 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
+  color: #cad16a;
   /* 1 */
   font: inherit;
   /* 2 */
@@ -3081,7 +3081,7 @@ td, th {
 }
 
 .collection .collection-item.active {
-  background-color: #26a69a;
+  background-color: #a4683e;
   color: #eafaf9;
 }
 
@@ -5201,13 +5201,13 @@ small {
 
 .btn:focus, .btn-large:focus,
 .btn-floating:focus {
-  background-color: #1d7d74;
+  background-color: #a4683e;
 }
 
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #a4683e;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -5216,7 +5216,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #cad16a;
 }
 
 .btn-floating {
@@ -5544,31 +5544,38 @@ button.btn-floating {
 }
 
 .waves-effect.waves-light .waves-ripple {
-  background-color: rgba(255, 255, 255, 0.45);
+  /*background-color: rgba(255, 255, 255, 0.45);*/
+  background-color: #a4683e;
 }
 
 .waves-effect.waves-red .waves-ripple {
-  background-color: rgba(244, 67, 54, 0.7);
+  /*background-color: rgba(244, 67, 54, 0.7);*/
+    background-color: #a4683e;
 }
 
 .waves-effect.waves-yellow .waves-ripple {
-  background-color: rgba(255, 235, 59, 0.7);
+  /*background-color: rgba(255, 235, 59, 0.7);*/
+    background-color: #a4683e;
 }
 
 .waves-effect.waves-orange .waves-ripple {
-  background-color: rgba(255, 152, 0, 0.7);
+  /*background-color: rgba(255, 152, 0, 0.7);*/
+    background-color: #a4683e;
 }
 
 .waves-effect.waves-purple .waves-ripple {
-  background-color: rgba(156, 39, 176, 0.7);
+  /*background-color: rgba(156, 39, 176, 0.7);*/
+    background-color: #a4683e;
 }
 
 .waves-effect.waves-green .waves-ripple {
-  background-color: rgba(76, 175, 80, 0.7);
+  /*background-color: rgba(76, 175, 80, 0.7);*/
+    background-color: #a4683e;
 }
 
 .waves-effect.waves-teal .waves-ripple {
-  background-color: rgba(0, 150, 136, 0.7);
+  /*background-color: rgba(0, 150, 136, 0.7);*/
+  background-color: #a4683e;
 }
 
 .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
@@ -5576,7 +5583,8 @@ button.btn-floating {
   font-style: normal;
   font-size: inherit;
   text-transform: inherit;
-  background: none;
+  /*background: none;*/
+  background-color: #cad16a;
 }
 
 .waves-effect img {
@@ -5957,7 +5965,8 @@ select:focus {
 
 button:focus {
   outline: none;
-  background-color: #2ab7a9;
+  /*background-color: #2ab7a9;*/
+  background-color: #cad16a;
 }
 
 label {
@@ -6731,8 +6740,8 @@ form p:last-child {
   height: 22px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #26a69a;
-  border-bottom: 2px solid #26a69a;
+  border-right: 2px solid #a4683e;
+  border-bottom: 2px solid #a4683e;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
   -webkit-backface-visibility: hidden;
@@ -6754,7 +6763,7 @@ form p:last-child {
   height: 22px;
   border-top: none;
   border-left: none;
-  border-right: 2px solid #26a69a;
+  border-right: 2px solid #a4683e;
   border-bottom: none;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -6824,8 +6833,8 @@ form p:last-child {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #a4683e;
+  background-color: #a4683e;
   z-index: 0;
 }
 
@@ -6837,8 +6846,8 @@ form p:last-child {
 
 [type="checkbox"].filled-in.tabbed:checked:focus + label:after {
   border-radius: 2px;
-  background-color: #26a69a;
-  border-color: #26a69a;
+  background-color: #a4683e;
+  border-color: #a4683e;
 }
 
 [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
@@ -6882,7 +6891,7 @@ form p:last-child {
 }
 
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #84c7c1;
+  background-color: #a4683e;
 }
 
 .switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
@@ -6890,7 +6899,7 @@ form p:last-child {
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #26a69a;
+  background-color: #a4683e;
 }
 
 .switch label .lever {
@@ -8871,7 +8880,8 @@ input[type=range]:focus::-ms-fill-upper {
   vertical-align: bottom;
 }
 
-.picker__button--today:hover,
+.picker__
+--today:hover,
 .picker__button--clear:hover,
 .picker__button--close:hover {
   cursor: pointer;

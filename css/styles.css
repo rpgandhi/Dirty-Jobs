@@ -1,12 +1,21 @@
-/*.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
-  display:none;
-}*/
-
-#dirty {
+.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
   display:none;
 }
 
-#skillsquiz, #quiz2, #quiz3, #quiz4, #output, #dirty {
+.container {
+  border-radius: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.well {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+ #quiz2, #quiz3, #quiz4, #output, #dirty {
   display: none
 }
 
@@ -22,4 +31,66 @@ p.title {
 
 #jobdescriptions {
   width: 70%;
+}
+
+.dirty, .animalsdead, .humanalive {
+  display:none;
+}
+#logo {
+  height: auto;
+  width: 50%;
+  padding-left: 1em;
+}
+
+.nav-wrapper, .page-footer {
+  background-color: #a4683e;
+}
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+   background: rgba(164, 104, 62, 0.2);
+   background-image: url(../img/gumbrick.jpg);
+   background-size: cover;
+   /*-webkit-filter: grayscale(100%);
+   filter: grayscale(100%);*/
+ }
+
+ #small {
+   height: auto;
+   width: 10%;
+   display: block;
+   float: right;
+ }
+
+ .switch label input[type=checkbox]:checked+.lever {
+  background-color: #a4683e;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #a4683e;
+}
+
+:checked:after{
+     border: 2px solid #cad16a;
+     background-color: #a4683e;
+}
+.ourbutton {
+  background-color: #a4683e;
+}
+.btn {
+  background-color: #a4683e;
+}
+.btn:hover, .btn-large:hover {
+  background-color: #cad16a;
 }
