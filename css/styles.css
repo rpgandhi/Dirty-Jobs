@@ -68,7 +68,7 @@ body {
    background: rgba(164, 104, 62, 0.2);
    background-image: url(../img/gumbrick.jpg);
    background-size: cover;
-   z-index: -2;
+   /*z-index: -2;*/
    /*-webkit-filter: grayscale(100%);
    filter: grayscale(100%);*/
  }
@@ -103,7 +103,7 @@ body {
 }
 
  .slider  {
-    z-index: -1;
+    /*z-index: -1;*/
     position: 90% 10%;
 
   }
