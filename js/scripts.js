@@ -30,25 +30,10 @@ var traits = ["gettingdirty", "insectslive","insectsdead","animalexcrement", "hu
 
 var dirty = ["Garbage Collecter", "Sewer Inspecter", "Septic Tank Servicer"];
 
-// function includes(item) {
-//   for (var i = 0; i < answersArr.length; i++) {
-//     if (traits.includes(answersArr[i]) {
-//       outputArr.push(answersArr[i]);
-//     }
-//   }
-// }
-
-// function includesCheck(item) {
-//   jobsject.forEach(function(item) {
-//
-// });
-// };
-
-
-// "animalblood", "humanblood", "animalexcrement", "humanexcrement", "animalslive", "animalsdead", "humansdead", "insectslive", "insectsdead", "animalrepro", "exterminationslaughter", "confinedspaces", "hazardousmaterials", "strongsmells", "gettingdirty", "wakeearly", "relocate", "travel", "education"
 
 //front end logic
 $(document).ready(function() {
+  $('.slider').slider();
   $("#quiz").submit(function(event) {
     event.preventDefault();
   });
@@ -76,21 +61,11 @@ $(document).ready(function() {
       answersArr.push(answer);
     });
     $("#quiz3").hide();
-    // console.log(compareAnswers(answersArr));
-    alert(outputArr);
 
     for (var i = 0; i < answersArr.length; i++) {
-      if (traits.includes(answersArr[i])) {
-        outputArr.push(answersArr[i]);
-        // alert(outputArr);
-        $(".dirty").show();
-        $(".animalsdead").show();
+        var trait = "." + answersArr[i];
+        $(trait).show();
 
-
-      }
     }
-
   });
-
-
 });
