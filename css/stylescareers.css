@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
-/*.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
-  display:none;
-}*/
+
 
 h3, h5 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Archivo', sans-serif;
+  color: rgba(59, 76, 36, 0.9);
 }
 .container {
   border-radius: 1em;
@@ -27,6 +26,7 @@ h3, h5 {
 p.title {
   font-weight: bold;
   padding-top: 1.5em;
+
 }
 
 .collapsible-header {
@@ -35,12 +35,10 @@ p.title {
 }
 
 #jobdescriptions {
-  width: 70%;
+  /*width: 70%;*/
 }
 
-/*.dirty, .animalsdead, .humanalive {
-  display:none;
-}*/
+
 #logo {
   height: auto;
   width: 60%;
@@ -121,7 +119,8 @@ body {
  }
 
  .well {
-   background-color: rgba(128,128,128, 0.8);
+   background-color: rgba(255, 255, 255, 0.8);
+   /*background-color: rgba(235, 242, 145, 0.1);*/
    border-radius: 6px;
    border-top-left-radius: 6px;
    border-top-right-radius: 6px;
@@ -134,5 +133,28 @@ body {
    border-top-left-radius: 6px;
    border-top-right-radius: 6px;
    border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+   border-bottom-left-radius: 6px;
  }
+ .collapsible-header, .chip {
+   background-color: rgba(164, 104, 62, 0.8);
+   color: rgb(235, 242, 145);
+ }
+
+ .collapsible-body {
+   background-color: rgba(255, 255, 255, 0.8);
+   color: rgba(59, 76, 36, 0.9);
+ }
+
+ .page-footer p {
+   color: rgb(235, 242, 145);
+ }
+ .material-icons{
+  color: rgb(235, 242, 145);
+ }
+
+ #nav-mobile a {
+   color: rgb(235, 242, 145);
+ }
+label {
+    color: rgba(59, 76, 36, 0.9);
+}
