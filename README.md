@@ -10,15 +10,15 @@ The website was coded using a JavaScript backend and extended functionality from
 
 To install locally, open your shell interface of choice and clone the project from its repository on Github:
 
-``git clone http://address.here ``
+``git clone https://github.com/rpgandhi/Dirty-Jobs.git ``
 
-(_The file size at this writing is ~40mb as the site is image intensive and hosts several libraries, so please account for download time on slow connections._)
+(_The file size at this writing is ~71mb as the site is image intensive and hosts several libraries, so please account for download time on slow connections._)
 
 You can then open the project files in your favorite text editor.
 
 ## Known Bugs
 
-No known bugs, except in the job descriptions.
+On some narrower resolutions, "Dirty Jobs" logo hovers on top of site content for approximately 100px to the right of the image and disrupts click-ability.
 
 ## Specs
 

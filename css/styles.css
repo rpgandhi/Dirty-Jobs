@@ -25,6 +25,11 @@ h3, h5 {
   display: none
 }
 
+#refresh {
+  display: none;
+  text-align: center;
+}
+
 p.title {
   font-weight: bold;
   padding-top: 1.5em;
@@ -49,6 +54,7 @@ p.title {
   padding-left: 1em;
   z-index: 10;
 }
+
 
 .nav-wrapper, .page-footer {
   background-color: #a4683e;
@@ -161,4 +167,7 @@ body {
  }
 label {
     color: rgba(59, 76, 36, 0.9);
+}
+#ourfooter {
+  text-align: center;
 }

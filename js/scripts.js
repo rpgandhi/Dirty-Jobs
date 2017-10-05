@@ -61,6 +61,7 @@ $(document).ready(function() {
       answersArr.push(answer);
     });
     $("#quiz3").hide();
+    $("#refresh").show();
 
     for (var i = 0; i < answersArr.length; i++) {
         var trait = "." + answersArr[i];
