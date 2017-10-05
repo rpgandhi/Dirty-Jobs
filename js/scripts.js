@@ -33,7 +33,7 @@ var dirty = ["Garbage Collecter", "Sewer Inspecter", "Septic Tank Servicer"];
 
 //front end logic
 $(document).ready(function() {
-  //$('.slider').slider();
+  $('.slider').slider();
   $("#quiz").submit(function(event) {
     event.preventDefault();
   });
