@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
 .animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
   display:none;
 }
 
+h3, h5 {
+  font-family: 'Archivo Black', sans-serif;
+}
 .container {
   border-radius: 1em;
   padding-top: 1.5em;
@@ -38,8 +43,9 @@ p.title {
 }
 #logo {
   height: auto;
-  width: 50%;
+  width: 60%;
   padding-left: 1em;
+  z-index: 10;
 }
 
 .nav-wrapper, .page-footer {
@@ -62,6 +68,7 @@ body {
    background: rgba(164, 104, 62, 0.2);
    background-image: url(../img/gumbrick.jpg);
    background-size: cover;
+   z-index: -2;
    /*-webkit-filter: grayscale(100%);
    filter: grayscale(100%);*/
  }
@@ -94,3 +101,38 @@ body {
 .btn:hover, .btn-large:hover {
   background-color: #cad16a;
 }
+
+ .slider  {
+    z-index: -1;
+    position: 90% 10%;
+
+  }
+
+ #home-page-text {
+   border-radius: 6px;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   border-bottom-right-radius: 6px;
+   border-bottom-left-radius: 6px;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+
+ .well {
+   background-color: rgba(128,128,128, 0.8);
+   border-radius: 6px;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   border-bottom-right-radius: 6px;
+   border-bottom-left-radius: 6px;
+ }
+
+ img  {
+   border-radius: 6px;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+ }
