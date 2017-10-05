@@ -39,6 +39,9 @@ $(document).ready(function() {
   });
   var outputArr = [];
   var answersArr = [];
+  $("#refresh").click(function(event) {
+    location.reload();
+  });
   $("#quizNav1").click(function(event) {
     $("input:checkbox[name=quizboxes]:checked").each(function(){
       var answer = $(this).val();
