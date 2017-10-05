@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
-.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
+/*.animalblood, .humanblood, .animalexcrement, .humanexcrement, .animalslive, .animalsdead, .humansdead, .insectslive, .insectsdead, .animalrepro, .exterminationslaughter, .confinedspaces, .hazardousmaterials, .strongsmells, .gettingdirty, .wakeearly, .relocate, .travel, .education {
   display:none;
-}
+}*/
 
 h3, h5 {
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
 }
 .container {
   border-radius: 1em;
@@ -38,9 +38,9 @@ p.title {
   width: 70%;
 }
 
-.dirty, .animalsdead, .humanalive {
+/*.dirty, .animalsdead, .humanalive {
   display:none;
-}
+}*/
 #logo {
   height: auto;
   width: 60%;
