@@ -24,7 +24,7 @@ On some narrower resolutions, "Dirty Jobs" logo hovers on top of site content fo
 
 |Behavior   |Input   |Output   |
 |---|---|---|
-|  Features certain jobs on front page | User clicks on item | User taken to job description of clicked item   |
+|  Features certain jobs on front page | None| Pictures of featured items scroll  |
 | User can find matching jobs  | User enters work condition tolerances  | Applicable jobs are listed  |  
 | User can browse jobs  | User clicks on specific job | Details (description, salary, requirements) are displayed    |  
 | Site navigation is intuitive | User clicks on intended content | Directed to respective content |
